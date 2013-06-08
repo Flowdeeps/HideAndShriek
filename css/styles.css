@@ -1,0 +1,143 @@
+/* font */
+@font-face {
+  font-family: "pressstart2p";
+  src: url(../fonts/pressstart2p.ttf);
+}
+
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  }
+#intro {
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 600px;
+  margin: -300px 0 0 -400px;
+  z-index: 1000;
+  font-family: pressstart2p;
+  }
+  #intro h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+    }
+  #intro h2 {
+    color: #ccc;
+    font-size: 20px;
+    margin: 20px;
+    }
+  #intro p {
+    color: white;
+    margin: 20px;
+    }
+  #intro a {
+    display: block;
+    background: yellow;
+    width: 150px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+    border-radius: 3px;
+    }
+#outro {
+  display: none;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 600px;
+  margin: -300px 0 0 -400px;
+  z-index: 1000;
+  font-family: pressstart2p;
+  opacity: 0;
+  }
+  #outro h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+    }
+  #outro a {
+    display: block;
+    background: yellow;
+    width: 150px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+    border-radius: 3px;
+    }
+#hud {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 200px;
+  margin: -300px 0 0 -400px;
+  z-index: 500;
+  line-height: 75px;
+  text-indent: 50px;
+  font-family: pressstart2p;
+  }
+
+#stage {
+  background: #000033;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -400px;
+  width: 800px;
+  height: 600px;
+  border-radius: 3px;
+  overflow: hidden;
+  }
+  #moon {
+    background: url(../images/moon.png) no-repeat 0 0 transparent;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 259px;
+    height: 259px;
+    }
+  #clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    }
+    #clouds div {
+      background: #333;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      opacity: .5;
+      }
+    #clouds div + div {
+      background: #666;
+      }
+    #clouds div + div + div {
+      background: #999;
+      }
+
+  #monster {
+    background: url(../images/monster.png) 0 0 no-repeat transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 207px;
+    width: 123px;
+    }

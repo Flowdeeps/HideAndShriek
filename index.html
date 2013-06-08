@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/game.js"></script>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+  <div id="hud">
+    <div>Score: <span id="score">0</span></div>
+  </div>
+  <div id="intro">
+    <h1>Hide and shriek</h1>
+    <h2>Instructions:</h2>
+    <p>Find the monster among the buildings. Click him to win a point.</p>
+    <p>Collect six points to complete the game.</p>
+    <p>That's literally it.</p>
+    <a href="#" id="play">Play</a>
+  </div>
+  <div id="outro">
+    <h1>You win?</h1>
+    <a href="#" id="playAgain">Play again</a>
+  </div>
+  <div id="stage">
+    <div id="moon"></div>
+    <div id="clouds">
+      <div id="c1"></div>
+      <div id="c2"></div>
+      <div id="c3"></div>
+    </div>
+    <div id="monster"></div>
+  </div>
+  <audio src="audio/background.wav" autoplay loop></audio>
+  <audio src="null" id="roar"></audio>
+</body>
+</html>
