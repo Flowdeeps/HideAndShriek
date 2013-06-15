@@ -1,9 +1,14 @@
 /* font */
 @font-face {
-  font-family: "pressstart2p";
-  src: url(../fonts/pressstart2p.ttf);
-}
-
+  font-family: 'press_start_2pregular';
+  src: url('../fonts/pressstart2p-webfont.eot');
+  src: url('../fonts/pressstart2p-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/pressstart2p-webfont.woff') format('woff'),
+       url('../fonts/pressstart2p-webfont.ttf') format('truetype'),
+       url('../fonts/pressstart2p-webfont.svg#press_start_2pregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
 body {
   background: black;
   margin: 0;
@@ -18,7 +23,7 @@ body {
   height: 600px;
   margin: -300px 0 0 -400px;
   z-index: 1000;
-  font-family: pressstart2p;
+  font-family: 'press_start_2pregular';
   }
   #intro h1 {
     color: white;
@@ -57,7 +62,7 @@ body {
   height: 600px;
   margin: -300px 0 0 -400px;
   z-index: 1000;
-  font-family: pressstart2p;
+  font-family: 'press_start_2pregular';
   opacity: 0;
   }
   #outro h1 {
@@ -88,7 +93,7 @@ body {
   z-index: 500;
   line-height: 75px;
   text-indent: 50px;
-  font-family: pressstart2p;
+  font-family: 'press_start_2pregular';
   }
 
 #stage {
