@@ -105,7 +105,6 @@ window.onload = function(){
 
   $monster.onclick = function(){
     randSrc = 'audio/' + roarArr[Math.floor(Math.random() * roarArrLength)] + ".wav";
-    console.log(randSrc);
     roar.src = randSrc;
     roar.load();
     roar.play();
@@ -226,7 +225,13 @@ window.onload = function(){
     if (m === (360 * 16)) {
       m = 0;
     }
-    $moon.setAttribute("style", "-webkit-transform: rotate(" + (m / 16) + "deg);");
+    $moon.setAttribute("style",
+                       "-webkit-transform: rotate(" + (m / 16) + "deg);" +
+                       "-mozilla-transform: rotate(" + (m / 16) + "deg);" +
+                       "-ms-transform: rotate(" + (m / 16) + "deg);" +
+                       "-o-transform: rotate(" + (m / 16) + "deg);" +
+                       "transform: rotate(" + (m / 16) + "deg);"
+                       );
   }, 25);
 
 };
